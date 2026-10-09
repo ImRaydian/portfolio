@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This css is so unorganized wtf */
+
+body {
+    background-color: #000000;
+    background-image:
+        linear-gradient(#0a0a0fb3, #000000b3),
+        url("assets/background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: "JetBrains Mono", monospace;
+}
+
+#hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "JetBrains Mono", monospace;
+}
+
+#about {
+    min-height: 100vh;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    font-family: "JetBrains Mono", monospace;
+}
+
+#hero h1,
+#hero p {
+    animation: fade-in 1.25s ease-out both;
+}
+
+#hero p {
+    animation-delay: 0.5s;
+}
+
+@keyframes fade-in {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: none;}
+}
+
+#rotating-text {
+    display: inline-block;
+}
+
+#rotating-text.swap {
+    animation: drop 0.5s ease;
+}
+
+@keyframes drop {
+    0% {opacity: 0; transform: translateY(-0.5em);}
+    60% {transform: translateY(0.1em);}
+    100% {opacity: 1; transform: none;}
+
+}
+
+#projects h2 {
+    font-size: 2rem;
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.card {
+    padding: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.orbit {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.orbit-center {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.orbit-ring {
+    position: absolute;
+    pointer-events: none;
+    inset: 0;
+    animation: orbit-spin 15s linear infinite;
+}
+
+@keyframes orbit-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.planet {
+    position: absolute;
+    pointer-events: auto;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -40px 0 0 -40px;
+    transform: rotate(var(--angle)) translateX(200px) rotate(calc(-1 * var(--angle)));
+}
+
+.planet-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #222;
+    display: grid;
+    place-items: center;
+    animation: orbit-counter-spin 15s linear infinite;
+}
+
+@keyframes orbit-counter-spin {
+    from { transform: rotate(360deg); }
+    to   { transform: rotate(0deg); }
+}
+
+.planet-inner img {
+    width: 75%;
+    height: 75%;
+    border-radius: 25%;
+    object-fit: contain;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  z-index: -1;
+  pointer-events: none;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    transparent 0deg,
+    #5511b426 20deg,
+    transparent 40deg,
+    transparent 120deg,
+    #5511b426 140deg,
+    transparent 160deg,
+    transparent 240deg,
+    #5511b426 260deg,
+    transparent 280deg
+  );
+  filter: blur(40px);
+  animation: spin 60s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
