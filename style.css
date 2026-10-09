@@ -5,6 +5,7 @@
 }
 
 /* This css is so unorganized wtf */
+/* I also will not fix it because it works for now */
 
 body {
     background-color: #000000;
@@ -91,6 +92,7 @@ body {
     width: 400px;
     height: 400px;
     margin: 0 auto;
+
 }
 
 .orbit-center {
