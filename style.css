@@ -52,6 +52,11 @@ body {
     to {opacity: 1; transform: none;}
 }
 
+@keyframes fade-out {
+    from {opacity: 1; transform: translateY(10px);}
+    to {opacity: 0; transform: none;}
+}
+
 #rotating-text {
     display: inline-block;
 }
@@ -201,7 +206,22 @@ body::before {
     font-family: "JetBrains Mono", monospace;
 }
 
+#info-close {
+    background: #5511b426;
+    color: white;
+    border: 2px solid #5511b426;
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-family: "JetBrains Mono", monospace;
+}
+
 #info-dialog::backdrop {
     background: rgb(0 0 0 / 0.6);
     backdrop-filter: blur(4px);
+}
+
+#info-dialog[open] {
+    animation: fade-in 1.25s ease-out both;
 }

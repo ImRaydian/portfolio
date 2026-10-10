@@ -20,22 +20,31 @@ const modes = {
     { id: 'game', label: 'Game', img: 'assets/game.svg' },
     { id: 'code',   label: 'Code', img: 'assets/code.svg' },
     { id: 'music',  label: 'Music', img: 'assets/music.svg' },
-    { id: 'setup',  label: 'MySetup', img: 'assets/linux.svg' },
+    { id: 'setup',  label: 'Setup', img: 'assets/linux.svg' }
   ],
   code: [
-    { id: 'python', label: 'Python', img: 'assets/python.svg' },
-    { id: 'js',     label: 'JavaScript', img: 'assets/javascript.svg', info: { title: 'Javascript', text: 'Really only learned it for this website. It was fun to learn how you make little animations in javascript!'} },
-    { id: 'html',   label: 'HTML', img: 'assets/html.svg' },
-    { id: 'linux',  label: 'Linux', img: 'assets/linux.svg' },
+    { id: 'python', label: 'Python', img: 'assets/python.svg', info: { title: 'Python', text: '99% of what I do is in Python and turns out python can do a lot of things. I learned it by my self at 10-ish from some books (: Check the project cards to see what I have done so far.'}},
+    { id: 'js',     label: 'JavaScript', img: 'assets/javascript.svg', info: { title: 'Javascript', text: 'I really only learned javascript for this website. It was quite fun to make little animations for this site. I will need to do more projects in javascript to learn more though.'} },
+    { id: 'html',   label: 'HTML', img: 'assets/html.svg', info: { title: 'HTML', text: 'Not really a programming language, but I did mess around with it to make some simple websites at 9. If I find any of the stuff I made I will update this.'}},
+    { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}}
   ],
   music: [
     { id: 'oricade', label: 'Oricade', img: 'assets/oricade.svg', url: 'https://youtube.com/@Oricade' },
     { id: 'miku',    label: 'Miku', img: 'assets/miku.jpg', url: 'https://www.youtube.com/@HatsuneMiku' },
     { id: 'Porter',  label: 'Porter', img: 'assets/porter.jpg', url: 'https://www.youtube.com/@porterrobinson' },
-    { id: 'Will',       label: 'Will', img: 'assets/will.jpg', url: 'https://www.youtube.com/@willstetson' }
+    { id: 'Will',    label: 'Will', img: 'assets/will.jpg', url: 'https://www.youtube.com/@willstetson' }
   ],
   game: [
-    {}
+    { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}},
+    { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}},
+    { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}},
+    { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}}
+  ],
+  setup: [
+    { id: 'fedora',  label: 'Fedora', img: 'assets/fedora.svg', url: 'https://fedoraproject.org/'},
+    { id: 'kde',     label: 'KDE', img: 'assets/kde.svg', info: { title: 'The KDE Theme I Use', text: 'I use the "Mystical Blue Theme" by juxtopposed. I find it very pretty and clean. https://github.com/juxtopposed/Mystical-Blue-Theme'}},
+    { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}},
+    { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}}
   ]
 };
 
