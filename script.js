@@ -24,7 +24,7 @@ const modes = {
   ],
   code: [
     { id: 'python', label: 'Python', img: 'assets/python.svg' },
-    { id: 'js',     label: 'JavaScript', img: 'assets/javascript.svg' },
+    { id: 'js',     label: 'JavaScript', img: 'assets/javascript.svg', info: { title: 'Javascript', text: 'Really only learned it for this website. It was fun to learn how you make little animations in javascript!'} },
     { id: 'html',   label: 'HTML', img: 'assets/html.svg' },
     { id: 'linux',  label: 'Linux', img: 'assets/linux.svg' },
   ],
@@ -53,11 +53,14 @@ buttons.forEach(btn => {
       changeMode(id);
     } else if (btn.dataset.url) {
       window.open(btn.dataset.url, '_blank', 'noopener');
+    } else if (btn.dataset.infoTitle) {
+      openInfo({ title: btn.dataset.infoTitle, text: btn.dataset.infoText})
     }
   });
 });
 
-// Changes the buttons on display based on the mode
+// why is my tab key not doing 4 spaces any more I swear it used to do that. Did copying code snipits from websites break my tab key lol
+// also do you comment with // or /* *\ or <!-- --> or # because I don't get it 
 function setMode(name) {
   const items = modes[name];
   buttons.forEach((btn, i) => {
@@ -65,8 +68,27 @@ function setMode(name) {
     btn.ariaLabel = items[i].label;
     btn.querySelector('img').src = items[i].img;
     btn.dataset.url = items[i].url || '';
+    btn.dataset.infoTitle = items[i].info?.title || '';
+    btn.dataset.infoText = items[i].info?.text || '';
   });
 }
+
+// Please don't tell me there is another random constant in the middle of the code. It makes no sense at al-
+// BANG
+const dialog = document.getElementById('info-dialog');
+// aw man why did this happen
+// I'm so sleepy but I really need this feature to work it would look so dang coooool
+
+function openInfo(info) { //Start of thing 5000
+  document.getElementById('info-title').innerHTML = info.title; // Title maker 5000, someone online said innerhtml is what I need but who knows what innerHTML is
+  document.getElementById('info-text').innerHTML = info.text; // Text maker 5000: I think innerHTML is like turning it into html to display to the client? I think...
+  dialog.showModal() // Show the thing 5000
+} // End of thing 5000
+
+document.getElementById('info-close').addEventListener('click', () => {
+  dialog.close() // Hide the thing 5000
+}); //ok after testing this popup thing it looks so ehhhhhhhh it's css time.
+
 
 setMode('main');
 

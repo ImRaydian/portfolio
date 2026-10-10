@@ -67,6 +67,13 @@ body {
 
 }
 
+#about {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: 1rem;
+    padding: 2rem;
+}
+
 #projects h2 {
     font-size: 2rem;
     font-family: "JetBrains Mono", monospace;
@@ -178,4 +185,23 @@ body::before {
 
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+/* time to drop more css blocks where ever I feel like it */
+/* this is such a good way to learn */
+
+#info-dialog {
+    background: #5511b426;
+    color: white;
+    margin: auto;
+    border: 5px solid #5511b426;
+    border-radius: 16px;
+    padding: 2rem;
+    width: min(90vw, 600px);
+    font-family: "JetBrains Mono", monospace;
+}
+
+#info-dialog::backdrop {
+    background: rgb(0 0 0 / 0.6);
+    backdrop-filter: blur(4px);
 }
