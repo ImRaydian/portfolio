@@ -26,7 +26,7 @@ const modes = {
     { id: 'python', label: 'Python', img: 'assets/python.svg', info: { title: 'Python', text: '99% of what I do is in Python and turns out python can do a lot of things. I learned it by myself from some books (: Check the project cards to see what I have done so far.'}},
     { id: 'js',     label: 'JavaScript', img: 'assets/javascript.svg', info: { title: 'Javascript', text: 'I really only learned javascript for this website. It was quite fun to make little animations for this site. I will need to do more projects in javascript to learn more though.'} },
     { id: 'html',   label: 'HTML', img: 'assets/html.svg', info: { title: 'HTML', text: 'Not really a programming language, but I did mess around with it to make some simple websites. If I find any of the stuff I made I will update this.'}},
-    { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}}
+    { id: 'c',      label: 'C', img: 'assets/C.svg', info: { title: 'C', text: 'Learned for CS50x but I have yet to think of any ideas using C'}}
   ],
   music: [
     { id: 'oricade', label: 'Oricade', img: 'assets/oricade.svg', url: 'https://youtube.com/@Oricade' },
@@ -35,7 +35,7 @@ const modes = {
     { id: 'Will',    label: 'Will', img: 'assets/will.jpg', url: 'https://www.youtube.com/@willstetson' }
   ],
   game: [
-    { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}},
+    { id: 'drg',      label: 'DRG', img: 'assets/drg.webp', url: 'https://store.steampowered.com/app/548430/Deep_Rock_Galactic/'},
     { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}},
     { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}},
     { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}}
