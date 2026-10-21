@@ -215,6 +215,10 @@ body::before {
     text-align: center;
 }
 
+#noClick {
+    text-align: right;
+}
+
 #info-dialog {
     background: #5511b426;
     color: white;
