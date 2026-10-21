@@ -151,3 +151,33 @@ async function changeMode(name) {
 
   busy = false;
 }
+
+// Hero message reroll button 4000
+
+const greetingsBase = ["Heyo!", "Hi there!", "Welcome :D", "Olá!", "こんにちは!", "Ahoy!", "Howdy!", "Hi!", "Hello!", "Hey!"]
+let greetings = [...greetingsBase];
+
+const rerollBtn = document.getElementById("reroll")
+const greeting = document.getElementById("welcomer")
+
+rerollBtn.addEventListener('click', () => {
+  let randomIndex;
+
+  if (greetings.length === 0) {
+    console.warn("Greetings is empty, refreshing...");
+    greetings = [...greetingsBase];
+  }
+
+  do {
+    randomIndex = Math.floor(Math.random() * greetings.length);
+  } while (greetings[randomIndex] === greeting.textContent);
+
+  greeting.textContent = greetings[randomIndex];
+  greetings.splice(randomIndex, 1);
+  console.log("Hero greeting updated. The available greetings are now:")
+  console.log(greetings)
+
+  greeting.classList.remove("swap");
+  void greeting.offsetWidth;
+  greeting.classList.add("swap");
+});
