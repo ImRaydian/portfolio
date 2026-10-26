@@ -29,13 +29,13 @@ const modes = {
     { id: 'c',      label: 'C', img: 'assets/C.svg', info: { title: 'C', text: 'Learned for CS50x but I have yet to think of any ideas using C'}}
   ],
   music: [
-    { id: 'oricade', label: 'Oricade', img: 'assets/oricade.svg', url: 'https://youtube.com/@Oricade' },
-    { id: 'miku',    label: 'Miku', img: 'assets/miku.jpg', url: 'https://www.youtube.com/@HatsuneMiku' },
-    { id: 'Porter',  label: 'Porter', img: 'assets/porter.jpg', url: 'https://www.youtube.com/@porterrobinson' },
-    { id: 'Will',    label: 'Will', img: 'assets/will.jpg', url: 'https://www.youtube.com/@willstetson' }
+    { id: 'oricade', label: 'Oricade', img: 'assets/oricade.avif', url: 'https://youtube.com/@Oricade' },
+    { id: 'miku',    label: 'Miku', img: 'assets/miku.avif', url: 'https://www.youtube.com/@HatsuneMiku' },
+    { id: 'Porter',  label: 'Porter', img: 'assets/porter.avif', url: 'https://www.youtube.com/@porterrobinson' },
+    { id: 'Will',    label: 'Will', img: 'assets/will.avif', url: 'https://www.youtube.com/@willstetson' }
   ],
   game: [
-    { id: 'drg',      label: 'DRG', img: 'assets/drg.webp', url: 'https://store.steampowered.com/app/548430/Deep_Rock_Galactic/'},
+    { id: 'drg',      label: 'DRG', img: 'assets/drg.avif', url: 'https://store.steampowered.com/app/548430/Deep_Rock_Galactic/'},
     { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}},
     { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}},
     { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}}
