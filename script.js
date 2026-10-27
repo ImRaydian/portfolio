@@ -35,8 +35,8 @@ const modes = {
     { id: 'Will',    label: 'Will', img: 'assets/will.avif', url: 'https://www.youtube.com/@willstetson' }
   ],
   game: [
-    { id: 'drg',      label: 'DRG', img: 'assets/drg.avif', url: 'https://store.steampowered.com/app/548430/Deep_Rock_Galactic/'},
-    { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}},
+    { id: 'drg',     label: 'DRG', img: 'assets/drg.avif', url: 'https://store.steampowered.com/app/548430/Deep_Rock_Galactic/'},
+    { id: 'portal2', label: 'Portal 2', img: 'assets/portal2.avif', url: 'https://store.steampowered.com/app/620/Portal_2/'},
     { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}},
     { id: 'id',      label: 'label', img: 'assets/linux.svg', info: { title: 'Template / Placeholder.', text: 'I had no idea what do put for this planet so to prevent the website from bugging out there is a placeholder for now.'}}
   ],
